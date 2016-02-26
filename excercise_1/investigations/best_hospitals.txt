@@ -1,0 +1,19 @@
+The best hospitals have been decided on the basis of the aggregation of scores from the Timely and Effective Care data and Readmission and Death data. Some measures were removed from this set as they did not make sense to the variable description in the data dictionary. These measures were 'OP_21', 'OP_20', 'OP_18b','OP_3b','OP_1','ED_2b', and 'ED_1b'. Some of these variables were a measure of time while others a measure of volume. The data dictionary describes the 'score' variable in this file to be a percentage of patients.
+
+Some variables were also converted from "lower score better" to a "higher score better" by taking their difference from a 100. This allowed us to take the avg of the scores and treat them "the higher the better" scale. Measures to which this transformation was appllied included all measures from the Readmission and Death dataset and the 'OP_22' measure from the Timely and Effective Care dataset.
+
+We believe this to be an accurate measure of the quality of care at hospitals because it takes into account a number of different measures that are applicable to different scores. The data has been treated to make it useful without compromising the detail or the granularity. We also believe that by taking the average of scores we account for the variety of treatments offered at a facility. So a hospital does not have a greater score simply because it offers more treatments. Every procedure in a hospital is accorded the same weight to make this analysis unbiased to the different sizes of facilities. 
+
+Keeping this in mind we find that the following hospitals have the highest aggregate scores and thus have the highest quality of care:
+
+Provider_ID		Aggregate Score		Hospital_Name				 			State
+210058 				100.0 		UNIV OF MD REHABILITATION &  ORTHOPAEDIC INSTITUTE		 MD
+490144 				100.0 		NOVANT HEALTH HAYMARKET MEDICAL CENTER 				 VA
+361327 				100.0 		COMMUNITY HOSPITALS AND WELLNESS CENTERS 			 OH
+521307 				100.0 		CHIPPEWA VALLEY HOSPITAL 					 WI
+141329 				100.0 		MORRISON COMMUNITY HOSPITAL 					 IL
+291304 				100.0 		PERSHING GENERAL HOSPITAL 					 NV
+241304 				100.0 		SANFORD MEDICAL CENTER WHEATON  				 MN
+231338 				99.77777777777777 SPECTRUM HEALTH GERBER MEMORIAL 				 MI
+670045 				99.5 		COOK CHILDRENS NORTHEAST HOSPITAL, LLC 				 TX
+501311 				99.0		EAST ADAMS RURAL HOSPITAL 					 WA

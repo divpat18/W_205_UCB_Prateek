@@ -1,0 +1,15 @@
+ The exact same assumptions and data cleaning has been performed for this question as with the best hospital one. The only difference is the aggreage function is applied to the states as opposed to hospitals.
+
+By this measure we find the following states to be the models of high quality care:
+
+State	Aggregate Score for all measures
+DE	90.40056855512516
+NH	90.23341070533586
+ME	89.69156290459453
+VT	89.5209655803318
+CT	89.17515324951036
+FL	89.1564811821026
+OH	89.13946664550895
+HI	89.10921108237805
+RI	89.06503213039827
+NJ	89.04997140853732

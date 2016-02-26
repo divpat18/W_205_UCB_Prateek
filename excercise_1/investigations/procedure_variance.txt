@@ -1,0 +1,15 @@
+i To annswre this particular question, data from three files was used, Timely and Effective Care-Hospital, Readmission and Death-Hospital, and measure dates. The scores were treated and cleaned in the same way as the best hospitals questiosn. The var_samp() function was used from the Hive Language Manual. We believe that this is the best way to compute teh variances between different hospitals for a given measure besure because the scores are taken from a number a of different hospitals across the country and the patients are randomly selected for each measure. It lowers the possibilty of any kind of bias and allows us to get a good account of the variance in measures for a given procedure across different hospitals.
+
+Using this method we find the following procedures to have the greatest variances:
+Measure_ID 	Variance		Measure Name
+AMI_7a 		529.0 			Fibrinolytic Therapy Received within 30 Minutes of Hospital Arrival
+STK_4 		482.5387626769004 	Thrombolytic Therapy
+OP_23 		477.6869956308875 	Head CT Scan Results for Acute Ischemic Stroke or Hemorrhagic Stroke Patients who Received Head CT or MRI Scan Interpretation Within 45 Minut					     es of ED Arrival
+OP_2 		330.60820895522374 	Fibrinolytic Therapy Received Within 30 Minutes of ED Arrival
+VTE_5 		265.8956985860033 	Venous Thromboembolism Warfarin Therapy Discharge Instructions
+VTE_1 		232.85417931121054 	Venous Thromboembolism Prophylaxis
+STK_8 		196.454354649314 	Stroke Education
+CAC_3 		163.4789473684211 	Home Management Plan of Care (HMPC) Document Given to Patient/Caregiver
+IMM_2 		142.71846991589118 	Influenza Immunization
+HF_1 		139.948837837354 	Discharge Instructions
+

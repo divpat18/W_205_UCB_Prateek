@@ -4,7 +4,7 @@ SELECT s.provider_id,
        h.state
 FROM
   (SELECT provider_id,
-          sum(score)/count(score)AS AGGREGATE
+          avg(score)AS AGGREGATE
    FROM score
    GROUP BY provider_id) s,
      hospital h

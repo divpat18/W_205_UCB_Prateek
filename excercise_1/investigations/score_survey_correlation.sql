@@ -1,4 +1,4 @@
-SELECT corr(s.score,su.overall_rating_achv)AS acievement_corr,
+SELECT corr(s.score,su.overall_rating_achv)AS achievement_corr,
        corr(s.score,su.overall_rating_impv) AS impv_corr,
        corr(s.score,su.overall_rating_dim) AS dimension_corr
 FROM

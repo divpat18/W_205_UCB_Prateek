@@ -1,5 +1,5 @@
 SELECT s.measure_id,
-       s.variance m.measure_name
+       s.variance, m.measure_name
 FROM
   (SELECT measure_id,
           var_samp(score) AS variance

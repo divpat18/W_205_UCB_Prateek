@@ -1,19 +1,20 @@
--- Creating hospital table from the hospital bank
+--Creating hospital table from the hospital bank
 CREATE TABLE hospital AS
 SELECT provider_id,
        hospital_name,
        state
 FROM hospital_bank;
 
---Creating procedure table from measure
+ --Creating procedure table from measure
+
 CREATE TABLE procedure AS
 SELECT measure_id,
        measure_name
 FROM measure;
 
+ -- Creating score table from effective care and readmission
 
--- Creating score table from effective care and readmission
-REATE TABLE score AS WITH q1 AS
+CREATE TABLE score AS WITH q1 AS
   (SELECT provider_id,
           measureid AS measure_id,
           CASE measureid
@@ -43,7 +44,7 @@ UNION ALL
 SELECT *
 FROM q2;
 
---Creating surveys table
+
 CREATE TABLE survey AS
 SELECT provider_id,
        cast(regexp_extract(overall_rating_achv,'[0-9]*',0) AS int) AS overall_rating_achv,

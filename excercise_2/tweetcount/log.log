@@ -1,0 +1,8 @@
+Running tweetwordcount topology...
+Routing Python logging to /root/tweetcount/logs.
+Running lein command to run local cluster:
+lein run -m streamparse.commands.run/-main topologies/tweetwordcount.clj -t 0 --option 'topology.workers=2' --option 'topology.acker.executors=2' --option 'streamparse.log.path="/root/tweetcount/logs"' --option 'streamparse.log.level="debug"'
+WARNING: You're currently running as root; probably by accident.
+Press control-C to abort or Enter to continue as root.
+Set LEIN_ROOT to disable this warning.
+

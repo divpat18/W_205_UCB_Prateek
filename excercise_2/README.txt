@@ -17,3 +17,5 @@ If no word is specified it prints all the words in the tweetwordcount table.
 
 To run the histogram.py use the following command: "python histogram.py <lowerCountLimit,upperCountLimit>"
 
+Note: The histogram plot contains some expletives. That data from the live stream and we have no control over it. 
+

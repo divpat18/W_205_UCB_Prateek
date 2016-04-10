@@ -2,7 +2,7 @@ This application was created and run on the AMI that Dan created for Ex2. In add
 
 The command for switching to python 2.7 is: "source /opt/py27environment/bin/activate"
 
-The ami is missing the postgres installation. It was installed using the postgres installation steps from Ex2.
+The ami is missing the postgres installation. It was installed using the postgres installation steps from Lab 2.
 
 The application depends on psycopg2 to communicate with the postgres database and tweepy to communicate with Twitter.
 
@@ -19,3 +19,9 @@ To run the histogram.py use the following command: "python histogram.py <lowerCo
 
 Note: The histogram plot contains some expletives. That data from the live stream and we have no control over it. 
 
+The following are some details of the application:
+Database: TCount
+Table: tweetwordcount
+Spout: tweets.py
+Bolts: parse.py wordcount.py
+Topologies: tweetwordcount.clj
